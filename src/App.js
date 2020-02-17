@@ -5,12 +5,17 @@ import {  Topbar } from './Component/Topbar';
 import { NavigationBar } from './Component/NavigationBar';
 import { AboutUs } from './Component/Pages/AboutUs';
 import {NoMatch} from './Component/NoMatch';
+import styled from 'styled-components';
 
+const Styles = styled.div`
+font-family: 'Kanit', sans-serif;
+`;
 
 function App() {
   return (
    <React.Fragment>
-      <Topbar/>
+       <Styles>
+         <Topbar/>
      <NavigationBar/>
       
        <Router>
@@ -20,6 +25,8 @@ function App() {
         <Router component = {NoMatch} />
       </Switch>
     </Router>
+       </Styles>
+      
     
     
    </React.Fragment>

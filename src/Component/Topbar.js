@@ -1,11 +1,39 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
+import { Container,Row,Col } from 'react-bootstrap';
+import styled from 'styled-components';
+
+import { faPhoneSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faFacebookSquare} from '@fortawesome/free-brands-svg-icons';
+const Styles = styled.div`
+background: darkgreen;
+padding:10px;
+color:GhostWhite;
+
+`;
+
  export const Topbar =()=>(
-    <Navbar  expand="lg" bg="primary" variant="dark">
-    <Navbar.Brand href="/"></Navbar.Brand>
+
+<Styles>
+  <div>
+    <Container>
+    <Row>
+    <Col xl={6} md={6} ></Col>
+    <Col xl={6} md={6} xs={12} >
+     <Row>
+    <Col xs={6} ><FontAwesomeIcon className="fa-2x" icon={faPhoneSquare}   /> 042-799000,042-799181 </Col>
+    <Col xs={6}><FontAwesomeIcon  className="fa-2x" icon={faFacebookSquare}   /> akathospital </Col>
    
-    <Navbar.Collapse id="responsive-navbar-nav">
-     
-    </Navbar.Collapse>
-  </Navbar>
+  </Row>
+  </Col>
+  </Row>
+    </Container>
+
+   </div>
+   
+</Styles>
+
+
+
+   
 )
