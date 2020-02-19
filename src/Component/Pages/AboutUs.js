@@ -1,10 +1,10 @@
 import React from 'react';
-import {Table} from 'react-bootstrap';
+import {Table, Container} from 'react-bootstrap';
 
 
 export const AboutUs = ()=>(
-
-    <Table striped bordered hover>
+<Container>
+ <Table striped bordered hover>
   <thead>
     <tr>
       <th>#</th>
@@ -34,6 +34,9 @@ export const AboutUs = ()=>(
   </tbody>
 </Table>
 
+
+</Container>
+   
 
 
     

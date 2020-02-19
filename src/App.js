@@ -6,6 +6,7 @@ import { NavigationBar } from './Component/NavigationBar';
 import { AboutUs } from './Component/Pages/AboutUs';
 import {NoMatch} from './Component/NoMatch';
 import styled from 'styled-components';
+import  {Jumbo}  from './Component/Jumbotron';
 
 const Styles = styled.div`
 font-family: 'Kanit', sans-serif;
@@ -17,7 +18,7 @@ function App() {
        <Styles>
          <Topbar/>
      <NavigationBar/>
-      
+      <Jumbo/>
        <Router>
       <Switch>
         <Route exact path= "/" component = {Home} />
