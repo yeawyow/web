@@ -7,12 +7,12 @@ import Inpatient from '../Images/Icon/inpatient.png';
 import Airoffice from '../Images/Icon/airoffice.png'; 
 import Iclaim from '../Images/Icon/iclaim.png'; 
 import Carsystem from '../Images/Icon/carsystem.png'; 
-
+import {Jumbotron} from '../Jumbotron';
 
 
 export const Home= ()=>(
   <React.Fragment>
-  
+   <Jumbotron/>
  
    <Container>
   <Row>

@@ -4,9 +4,10 @@ import { Home } from './Component/Home/Index';
 import {  Topbar } from './Component/Topbar';
 import { NavigationBar } from './Component/NavigationBar';
 import { AboutUs } from './Component/Pages/AboutUs';
+import {Directors} from './Component/Pages/Directors';
 import {NoMatch} from './Component/NoMatch';
 import styled from 'styled-components';
-import  {Jumbotron}  from './Component/Jumbotron';
+//import  {Jumbotron}  from './Component/Jumbotron';
 
 const Styles = styled.div`
 font-family: 'Kanit', sans-serif;
@@ -18,10 +19,11 @@ function App() {
        <Styles>
          <Topbar/>
      <NavigationBar/>
-      <Jumbotron/>
+      
        <Router>
       <Switch>
         <Route exact path= "/" component = {Home} />
+        <Route exact path="/Directors" component={Directors}/>
         <Route exact path= "/About" component = { AboutUs } />
         <Router component = {NoMatch} />
       </Switch>

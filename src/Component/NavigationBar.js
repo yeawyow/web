@@ -34,11 +34,12 @@ export const NavigationBar = () => (
     <Nav.Link href="/"> <FontAwesomeIcon className="fa-lg" icon={faHome}  /></Nav.Link>
       <NavDropdown title="ข้อมูลหน่วยงาน" id="collasible-nav-dropdown">
         <NavDropdown.Item href="About">ประวัติความเป็นมา</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">คณะกรรมการบริหาร</NavDropdown.Item>
+        <NavDropdown.Item href="Directors">คณะกรรมการบริหาร</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">โครงสร้างหน่วยงาน</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="#action/3.4">ข้อมูลหน่วยงาน</NavDropdown.Item>
       </NavDropdown>
+      
       <Nav.Link href="#pricing">ผลงานและนวตกรรม</Nav.Link>
       <Nav.Link href="#pricing">ติดต่อเรา</Nav.Link>
     </Nav>
