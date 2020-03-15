@@ -9,6 +9,7 @@ export const Home= ()=>(
   <React.Fragment>
   <Jumbotron/> 
   <ProOnline/>
+  <p></p>
   <DocPup />
   </React.Fragment>
    

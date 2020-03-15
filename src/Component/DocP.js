@@ -10,13 +10,14 @@ import { Column } from 'primereact/column';
 import { withRouter } from 'react-router-dom';
 
 
-class DocPup extends Component{
+class DocP extends Component{
     constructor(props){
         super(props);
         this.state = {
             data:[]
         }
     }
+    
     componentWillMount(){
         let url="http://202.80.228.46:3000/api/DocPublishes?access_token=HMpaz9KKH07Z7H32w7jcugUfbakecLxs6TsEUGGDs6bdqRsiHQIhD7FshZkRzPZ3";
         console.log(url);
@@ -47,22 +48,7 @@ class DocPup extends Component{
            
            <Container>
               
-              
-                   <span className="h2">เอกสารเผยแพร่</span>
-                   <div className="ontent-section introduction">
-                    <DataTable
-                    value={this.state.data}
-                    responsive={true} 
-                    paginator={true} rows={10} first={this.state.first} onPage={(e) => this.setState({first: e.first})}
-                   
-                >   
-                    <Column body={this.detailLink} header="หัวข้อ" />
-                    <Column field="docPubDate" header="วันที่ประกาศ" />
-                    <Column field="docPubDownload" header="จำนวน/ครั้ง" />
-                </DataTable>
-
-                   </div>
-              
+             {this.state.response}
            </Container>
                
 
@@ -71,4 +57,4 @@ class DocPup extends Component{
     }
     
 }
-export default withRouter(DocPup);
+export default withRouter(DocP);

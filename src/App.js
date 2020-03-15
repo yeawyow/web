@@ -7,6 +7,8 @@ import { AboutUs } from './Component/Pages/AboutUs';
 import {Directors} from './Component/Pages/Directors';
 import {NoMatch} from './Component/NoMatch';
 import DocPup from './Component/DocPup.js';
+import DocP from './Component/DocP.js';
+import Test from './Component/Test.js';
 import styled from 'styled-components';
 //import  {Jumbotron}  from './Component/Jumbotron';
 
@@ -27,6 +29,8 @@ function App() {
         <Route exact path="/Directors" component={Directors}/>
         <Route exact path= "/About" component = { AboutUs } />
         <Route exact path= "/docpup" component = {DocPup} />
+        <Route exact path= "/docp" component = {DocP} />
+        <Route exact path= "/test" component = {Test} />
         <Router component = {NoMatch} />
       </Switch>
     </Router>
