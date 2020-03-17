@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav,Navbar,NavDropdown, Container,Image} from 'react-bootstrap';
+import { Nav,Navbar,NavDropdown,Image} from 'react-bootstrap';
 import styled from 'styled-components';
 import logohos from './Images/logohos.png';
 
@@ -22,7 +22,7 @@ const Styles = styled.div`
 export const NavigationBar = () => (
   <Styles>
 
-<Container>
+
 <Navbar collapseOnSelect expand="lg" bg="" variant="light">
   <Navbar.Brand href="/"><Image className="thumbnail" src={logohos}  /></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -32,6 +32,7 @@ export const NavigationBar = () => (
     </Nav>
     <Nav>
     <Nav.Link href="/"> <FontAwesomeIcon className="fa-lg" icon={faHome}  /></Nav.Link>
+    <Nav.Link href="/DocPup2">เอกสารเผยแพร่</Nav.Link>
       <NavDropdown title="ข้อมูลหน่วยงาน" id="collasible-nav-dropdown">
         <NavDropdown.Item href="About">ประวัติความเป็นมา</NavDropdown.Item>
         <NavDropdown.Item href="Directors">คณะกรรมการบริหาร</NavDropdown.Item>
@@ -46,7 +47,7 @@ export const NavigationBar = () => (
   </Navbar.Collapse>
 </Navbar>
 
-  </Container>
+  
     
 
   </Styles>

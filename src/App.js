@@ -6,9 +6,10 @@ import { NavigationBar } from './Component/NavigationBar';
 import { AboutUs } from './Component/Pages/AboutUs';
 import {Directors} from './Component/Pages/Directors';
 import {NoMatch} from './Component/NoMatch';
-import DocPup from './Component/DocPup.js';
-import DocP from './Component/DocP.js';
-import Test from './Component/Test.js';
+import DocPup2 from './Component/DocPup2.js';
+import DocP from './Component/DocP';
+import PageNotFound from './Component/Pages/PageNotFound.js';
+
 import styled from 'styled-components';
 //import  {Jumbotron}  from './Component/Jumbotron';
 
@@ -19,7 +20,7 @@ font-family: 'Kanit', sans-serif;
 function App() {
   return (
    <React.Fragment>
-       <Styles>
+         <Styles>
          <Topbar/>
      <NavigationBar/>
       
@@ -28,9 +29,10 @@ function App() {
         <Route exact path= "/" component = {Home} />
         <Route exact path="/Directors" component={Directors}/>
         <Route exact path= "/About" component = { AboutUs } />
-        <Route exact path= "/docpup" component = {DocPup} />
-        <Route exact path= "/docp" component = {DocP} />
-        <Route exact path= "/test" component = {Test} />
+        <Route exact path= "/docpup2" component = {DocPup2} />
+        <Route exact path= "/docp/:id" component = {DocP} />
+        <Route exact path= "/404" component ={PageNotFound}/>
+       
         <Router component = {NoMatch} />
       </Switch>
     </Router>

@@ -37,7 +37,7 @@ class DocPup extends Component{
     showDetail=(a)=>{
         console.log(a);
         this.props.history.push({
-            pathname: '/test',
+            pathname: '/Docp',
             state: { detail: a }
         });
     }
