@@ -48,7 +48,7 @@ class DocPup2 extends Component {
 
   render() {
     var { items } = this.state;
-
+    console.log(items);
     return (
       <div className="container">
         <span className="h2">เอกสารเผยแพร่</span>

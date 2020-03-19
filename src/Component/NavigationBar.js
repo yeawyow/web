@@ -39,7 +39,7 @@ export const NavigationBar = () => (
             <NavDropdown.Item href="/directors">
               คณะกรรมการบริหาร
             </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">
+            <NavDropdown.Item href="/structurehos">
               กรอบโครงสร้างหน่วยงาน
             </NavDropdown.Item>
             <NavDropdown.Divider />
