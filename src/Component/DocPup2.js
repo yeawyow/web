@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Table } from "react-bootstrap";
-import { Link, withRouter } from "react-router-dom";
+import {  withRouter } from "react-router-dom";
 import { faDownload, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
@@ -65,12 +65,12 @@ class DocPup2 extends Component {
             </thead>
             <tbody>
               {items.map(item => (
-                <tr>
-                  <td Style="color: Dodgerblue;">
+                <tr key={item.id}>
+                  <td>
                     <FontAwesomeIcon className="fa-lg" icon={faFilePdf} />
                   </td>
                   <td>
-                    <Link to={`/docp/${item.id}`}>{item.docPubTopic}</Link>
+                    <a href={`http://akathospital.com/file/${item.docPubFile}`} target="_bank">{item.docPubTopic}</a>
                   </td>
                   <td>{item.docPubDate}</td>
                   <td>

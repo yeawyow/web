@@ -9,9 +9,8 @@ import { NoMatch } from "./Component/NoMatch";
 import DocPup2 from "./Component/DocPup2.js";
 import DocP from "./Component/DocP";
 import { PageNotFound } from "./Component/Pages/PageNotFound";
-
 import styled from "styled-components";
-import { StructureHos } from "./Component/Pages/StructureHos";
+
 //import  {Jumbotron}  from './Component/Jumbotron';
 
 const Styles = styled.div`
@@ -32,7 +31,6 @@ function App() {
             <Route exact path="/About" component={AboutUs} />
             <Route exact path="/docpup2" component={DocPup2} />
             <Route exact path="/docp/:id" component={DocP} />
-            <Route exact path="/structurehos" component={StructureHos} />
             <Route exact path="/404" component={PageNotFound} />
 
             <Router component={NoMatch} />
