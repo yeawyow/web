@@ -5,7 +5,6 @@ import { Topbar } from "./Component/Topbar";
 import { NavigationBar } from "./Component/NavigationBar";
 import { ContactUs } from "./Component/Pages/ContactUs";
 import { Directors } from "./Component/Pages/Directors";
-import { NoMatch } from "./Component/NoMatch";
 import DocPup2 from "./Component/DocPup2.js";
 import DocP from "./Component/DocP";
 import ValuesM from "./Component/Pages/ValuesM";
@@ -40,8 +39,6 @@ function App() {
             <Route exact path="/docpup2" component={DocPup2} />
             <Route exact path="/docp/:id" component={DocP} />
             <Route exact path="/404" component={PageNotFound} />
-
-            <Router component={NoMatch} />
           </Switch>
         </Router>
       </Styles>

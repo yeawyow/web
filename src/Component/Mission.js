@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import styled from "styled-components";
 
 const Styles = styled.div`
@@ -8,7 +7,7 @@ const Styles = styled.div`
   }
 `;
 export const Mission = () => (
-  <Container>
+  <div>
     <Styles>
       <hr></hr>
       <div>
@@ -27,6 +26,6 @@ export const Mission = () => (
         </p>
       </div>
     </Styles>
-    ์<hr></hr>
-  </Container>
+    <hr></hr>
+  </div>
 );
