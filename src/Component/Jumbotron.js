@@ -30,6 +30,7 @@ export const Jumbotron = () => (
 <p></p>{*/}
         </Container>
       </Jumbo>
+      <hr></hr>
     </div>
   </Styles>
 );

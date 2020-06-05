@@ -1,33 +1,32 @@
 import React from "react";
-import { Row, Col, Image, Container } from "react-bootstrap";
+import { Row, Col, Card, Image, Container } from "react-bootstrap";
 import { ProOnline } from "../ProOnline";
 import { Jumbotron } from "../Jumbotron";
 //import DocPup2 from '../DocPup2';
 import { Mission } from "../Mission";
+import Manerger from "../Images/Director/1.jpg";
 
 export const Home = () => (
   <div>
     <React.Fragment>
-      <div className="col-12">
+      <Col>
         <Jumbotron />
-      </div>
+      </Col>
+
       <Container fluid>
         <Row>
-          <div className="col-8">
+          <Col lg={{ span: 8, offset: 1 }} xs={12} md={8}>
             <Mission />
             <ProOnline />
-          </div>
-          <div className="col-4">
-            <Row>
-              <Col>
-                <DirectorsList
-                  img="1"
-                  name="นายกิตตินาถ ติยะพิบูลย์ไชยา"
-                  posit="ผู้อำนวยการโรงพยาบาลอากาศอำนวย"
-                ></DirectorsList>
-              </Col>
-            </Row>
-          </div>
+          </Col>
+
+          <Col lg={{ span: 1, offset: 1 }} xs={12} md={4}>
+            <DirectorsList
+              img="1"
+              name="นายกิตตินาถ ติยะพิบูลย์ไชยา"
+              posit="ผู้อำนวยการโรงพยาบาลอากาศอำนวย"
+            ></DirectorsList>
+          </Col>
         </Row>
       </Container>
 
@@ -35,14 +34,15 @@ export const Home = () => (
     </React.Fragment>
   </div>
 );
-const DirectorsList = ({ img, name, posit, children }) => {
+const DirectorsList = ({ name, posit }) => {
   //const url = `https://randomuser.me/api/portraits/thumb/men/${img}.jpg`;
   return (
-    <article>
-      <Image width="171px" height="180px" rounded />
-      <h4>{name}</h4>
-      <h5>{posit}</h5>
-      {children}
-    </article>
+    <Card style={{ width: "14rem" }}>
+      <Card.Body>
+        <Card.Img src={Manerger} />
+        <Card.Title>{name}</Card.Title>
+        <Card.Text>{posit}</Card.Text>
+      </Card.Body>
+    </Card>
   );
 };

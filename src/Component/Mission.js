@@ -9,7 +9,6 @@ const Styles = styled.div`
 export const Mission = () => (
   <div>
     <Styles>
-      <hr></hr>
       <div>
         <h2>พันธกิจ (Mission)</h2>
         <p>
@@ -25,7 +24,7 @@ export const Mission = () => (
           </ul>
         </p>
       </div>
+      <hr></hr>
     </Styles>
-    <hr></hr>
   </div>
 );
