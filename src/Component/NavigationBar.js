@@ -33,23 +33,43 @@ export const NavigationBar = () => (
             {" "}
             <FontAwesomeIcon className="fa-lg" icon={faHome} />
           </Nav.Link>
-          <Nav.Link href="/DocPup2">เอกสารเผยแพร่</Nav.Link>
-          <NavDropdown title="ข้อมูลหน่วยงาน" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="About">ประวัติความเป็นมา</NavDropdown.Item>
+          <NavDropdown title="เกี่ยวกับเรา" id="collasible-nav-dropdown">
+            <NavDropdown.Item href="Basic information">
+              ข้อมูลพื้นฐาน
+            </NavDropdown.Item>
+            <NavDropdown.Item href="About">ประวัติโรงพยาบาล</NavDropdown.Item>
             <NavDropdown.Item href="/directors">
               คณะกรรมการบริหาร
             </NavDropdown.Item>
+            <NavDropdown.Item href="ValuesM">ค่านิยม (Values)</NavDropdown.Item>
+
             <NavDropdown.Item href="/structurehos">
               กรอบโครงสร้างหน่วยงาน
             </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
-              ข้อมูลหน่วยงาน
-            </NavDropdown.Item>
           </NavDropdown>
+          <NavDropdown title="เอกสารเผยแพร่" id="collasible-nav-dropdown">
+            <NavDropdown.Item href="Basic information">
+              แผนยุทธศาสตร์ชาติ 20 ปี
+            </NavDropdown.Item>
+            <NavDropdown.Item href="ValuesM">
+              แผนปฏิบัติงานของหน่วยงาน
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/docpup2">
+              แผนจัดซื้อจัดจ้าง
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/directors">
+              ช่องทางการร้องเรียน
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/structurehos">
+              คู่มือการปฏิบัติงาน
+            </NavDropdown.Item>
+            <NavDropdown.Divider />
+          </NavDropdown>
+          {/*}  <Nav.Link href="/DocPup2">เอกสารเผยแพร่</Nav.Link>{*/}
 
           <Nav.Link href="#pricing">ผลงานและนวตกรรม</Nav.Link>
-          <Nav.Link href="#pricing">ติดต่อเรา</Nav.Link>
+          <Nav.Link href="ContactUs">ติดต่อเรา</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

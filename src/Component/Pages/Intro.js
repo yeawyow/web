@@ -1,24 +1,22 @@
 import React from "react";
 import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 import styled from "styled-components";
-import hosband from "../Component/Images/intro.jpg";
+import intro from "../Component/Images/intro.jpg";
 
 const Styles = styled.div`
   .jumbo {
-    background: url(${hosband});
+    background: url(${intro}) no-repeat fixed bottom;
     background-size: cover;
-    width: 1024px;
-    height: 768px;
-    display: block;
-    margin: 0 auto;
+    height: 350px;
+    position: relative;
+    z-index: -2;
   }
+  color: white;
 `;
-export const Jumbotron = () => (
+export const Intro = () => (
   <Styles>
-    <div>
-      <Jumbo className="jumbo">
-        <Container>
-          {/*}
+    <Jumbo fluid className="jumbo">
+      <Container>
         <h1>โรงพยาบาลอากาศอำนวย ยินดีต้อนรับ</h1>
         <p>
           <h4>
@@ -27,9 +25,8 @@ export const Jumbotron = () => (
           </h4>
         </p>
         <p></p>
-<p></p>{*/}
-        </Container>
-      </Jumbo>
-    </div>
+        <p></p>
+      </Container>
+    </Jumbo>
   </Styles>
 );

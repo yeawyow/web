@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./Component/Home/Index";
 import { Topbar } from "./Component/Topbar";
 import { NavigationBar } from "./Component/NavigationBar";
-import { AboutUs } from "./Component/Pages/AboutUs";
+import { ContactUs } from "./Component/Pages/ContactUs";
 import { Directors } from "./Component/Pages/Directors";
 import { NoMatch } from "./Component/NoMatch";
 import DocPup2 from "./Component/DocPup2.js";
 import DocP from "./Component/DocP";
+import ValuesM from "./Component/Pages/ValuesM";
+import BasicInformation from "./Component/Pages/BasicInformation";
 import { PageNotFound } from "./Component/Pages/PageNotFound";
 import styled from "styled-components";
 
@@ -28,7 +30,13 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/Directors" component={Directors} />
-            <Route exact path="/About" component={AboutUs} />
+            <Route exact path="/ContactUs" component={ContactUs} />
+            <Route exact path="/ValuesM" component={ValuesM} />
+            <Route
+              exact
+              path="/Basic information"
+              component={BasicInformation}
+            />
             <Route exact path="/docpup2" component={DocPup2} />
             <Route exact path="/docp/:id" component={DocP} />
             <Route exact path="/404" component={PageNotFound} />

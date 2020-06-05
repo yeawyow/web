@@ -1,21 +1,15 @@
+import React from "react";
+import { ProOnline } from "../ProOnline";
 
-import React from 'react';
-import {ProOnline} from '../ProOnline';
-
-import {Jumbotron} from '../Jumbotron';
+import { Jumbotron } from "../Jumbotron";
 //import DocPup2 from '../DocPup2';
-import {Mission} from '../Mission';
+import { Mission } from "../Mission";
 
-export const Home= ()=>(
+export const Home = () => (
   <React.Fragment>
-  <Jumbotron/> 
-  <ProOnline/>
-  <p></p>
-  <Mission/>
+    <Jumbotron />
+    <Mission />
+    <ProOnline />
+    <p></p>
   </React.Fragment>
-   
-  
-  
-)
-
-
+);

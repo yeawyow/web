@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Table } from "react-bootstrap";
-import {  withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { faDownload, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
@@ -30,18 +30,18 @@ class DocPup2 extends Component {
     super(props);
     this.state = {
       items: [],
-      isLoaded: false
+      isLoaded: false,
     };
   }
   componentDidMount() {
     fetch(
-      "http://202.80.228.46:3000/api/DocPublishes/?access_token=HMpaz9KKH07Z7H32w7jcugUfbakecLxs6TsEUGGDs6bdqRsiHQIhD7FshZkRzPZ3"
+      "http://202.80.228.46:8080/api/DocPublishes/?access_token=HMpaz9KKH07Z7H32w7jcugUfbakecLxs6TsEUGGDs6bdqRsiHQIhD7FshZkRzPZ3"
     )
-      .then(res => res.json())
-      .then(json => {
+      .then((res) => res.json())
+      .then((json) => {
         this.setState({
           isLoaded: true,
-          items: json
+          items: json,
         });
       });
   }
@@ -64,13 +64,18 @@ class DocPup2 extends Component {
               </tr>
             </thead>
             <tbody>
-              {items.map(item => (
+              {items.map((item) => (
                 <tr key={item.id}>
                   <td>
                     <FontAwesomeIcon className="fa-lg" icon={faFilePdf} />
                   </td>
                   <td>
-                    <a href={`http://akathospital.com/file/${item.docPubFile}`} target="_bank">{item.docPubTopic}</a>
+                    <a
+                      href={`http://akathospital.com/file/${item.docPubFile}`}
+                      target="_bank"
+                    >
+                      {item.docPubTopic}
+                    </a>
                   </td>
                   <td>{item.docPubDate}</td>
                   <td>
