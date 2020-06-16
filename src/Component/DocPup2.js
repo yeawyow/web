@@ -71,7 +71,7 @@ class DocPup2 extends Component {
                   </td>
                   <td>
                     <a
-                      href={`http://akathospital.com/file/${item.docPubFile}`}
+                      href={`http://akathospital.com/airoffice/indicator_app/modules/docpup2/uploads/${item.docPubFile}`}
                       target="_bank"
                     >
                       {item.docPubTopic}

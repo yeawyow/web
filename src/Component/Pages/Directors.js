@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Container, Image } from "react-bootstrap";
 import styled from "styled-components";
+//import M1 from "../Images/Director/1.jpg";
 
 const Styles = styled.div`
   text-align: center;
@@ -159,9 +160,10 @@ export const Directors = () => {
 };
 const DirectorsList = ({ img, name, posit, children }) => {
   //const url = `https://randomuser.me/api/portraits/thumb/men/${img}.jpg`;
+  const url = "../Images/Director/1.jpg";
   return (
     <article>
-      <Image width="171px" height="180px" rounded />
+      <Image src={url} width="171px" height="180px" rounded />
       <h4>{name}</h4>
       <h5>{posit}</h5>
       {children}

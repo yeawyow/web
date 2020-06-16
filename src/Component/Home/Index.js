@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Card, Image, Container } from "react-bootstrap";
+import { Row, Col, Card, Container } from "react-bootstrap";
 import { ProOnline } from "../ProOnline";
 import { Jumbotron } from "../Jumbotron";
 //import DocPup2 from '../DocPup2';
