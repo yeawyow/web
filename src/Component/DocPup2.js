@@ -50,7 +50,7 @@ class DocPup2 extends Component {
     var { items } = this.state;
     console.log(items);
     return (
-      <div className="container">
+      <div className="container mt-5">
         <span className="h2">เอกสารเผยแพร่</span>
         <p></p>
         <Styles>

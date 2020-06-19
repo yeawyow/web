@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class BasicInformation extends Component {
   render() {
     return (
-      <div>
+      <div className="mt-5">
         <div className="container">
           <h2 className="text-primary">ข้อมูลพื้นฐาน : Basic Information</h2>
           <br></br>

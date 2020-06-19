@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 
 export const ContactUs = () => (
-  <Container>
+  <Container className="mt-5">
     <ul>
       <h6>
         <li className="p-2">
