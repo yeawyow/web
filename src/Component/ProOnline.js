@@ -1,51 +1,53 @@
-import React from 'react';
-import { Row,Col,Image, Container } from 'react-bootstrap';
-import Putsadu from './Images/Icon/putsadu.png'; // Tell Webpack this JS file uses this image
-import Inpatient from './Images/Icon/inpatient.png'; 
-import Airoffice from './Images/Icon/airoffice.png'; 
-import Iclaim from './Images/Icon/iclaim.png'; 
-import Carsystem from './Images/Icon/carsystem.png'; 
+import React from "react";
+import { Row, Col, Image, Container } from "react-bootstrap";
+import Putsadu from "./Images/Icon/putsadu.png"; // Tell Webpack this JS file uses this image
+import Inpatient from "./Images/Icon/inpatient.png";
+import Airoffice from "./Images/Icon/airoffice.png";
+import Iclaim from "./Images/Icon/iclaim.png";
+import Carsystem from "./Images/Icon/carsystem.png";
 
-export const ProOnline=()=>(
+export const ProOnline = () => (
+  <Container>
+    <h2>โปรแกรมออนไลน์</h2>
+    <p></p>
+    <Row>
+      <Col>
+        <a href="http://akathospital.com/carsystem" rel=" noopener">
+          <Image src={Carsystem} rounded />
+        </a>
+        <div className="card2">จองรถออนไลน์</div>
+      </Col>
 
-    <Container>
-      <h2>โปรแกรมออนไลน์</h2>
-      <p></p>
-<Row>
-        <Col>
-      <a  href="http://akathospital.com/carsystem"  rel=" noopener">
-    <Image src={Carsystem} rounded /></a>
-    <div className="card2">จองรถออนไลน์</div>
-    </Col>
-    
-    <Col>
-    <a href="http://akathospital.com/iclaim"   rel=" noopener">
-    <Image src={Iclaim} rounded /></a>
-    <div className="desc">Iclaim</div>
-    
-    </Col>
-    <Col>
-    <a href="http://akathospital.com/airoffice"  rel=" noopener">
-    <Image src={Airoffice} rounded /></a>
-    <div className="desc">Air-Office</div>
-    
-    </Col>
-    <Col>
-    <a href="http://akathospital.com/inpatient"   rel=" noopener">
-    <Image src={Inpatient} rounded /></a>
-    <div className="desc">ระบบรายงานจำนวนผู้ป่วยใน
-</div>
-
-</Col>
-    <Col>
-    <a href="http://34.87.59.209/erp/r8pw/"  rel="noopener noopener">
-    <Image src={Putsadu} rounded /></a>
-    <div className="desc">คลังพัสดุ</div>
-    
-    </Col>
-    
-  </Row>
-    </Container>
-    
-
-)
+      <Col>
+        <a href="http://akathospital.com/iclaim" rel=" noopener">
+          <Image src={Iclaim} rounded />
+        </a>
+        <div className="desc">Iclaim</div>
+      </Col>
+      <Col>
+        <a href="http://akathospital.com/airoffice" rel=" noopener">
+          <Image src={Airoffice} rounded />
+        </a>
+        <div className="desc">Air-Office</div>
+      </Col>
+      <Col>
+        <a href="http://akathospital.com/inpatient" rel=" noopener">
+          <Image src={Inpatient} rounded />
+        </a>
+        <div className="desc">ระบบรายงานจำนวนผู้ป่วยใน</div>
+      </Col>
+      <Col>
+        <a href="http://34.87.59.209/erp/r8pw/" rel="noopener noopener">
+          <Image src={Putsadu} rounded />
+        </a>
+        <div className="desc">คลังพัสดุ</div>
+      </Col>
+      <Col>
+        <a href="https://www.thai-nrls.org/" rel="noopener noopener">
+          <Image src={Putsadu} rounded />
+        </a>
+        <div className="desc">ความเสี่ยง NRLS</div>
+      </Col>
+    </Row>
+  </Container>
+);
